@@ -1,32 +1,18 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import Text from '../components/Text';
-import Button from '../components/MyButton';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Astrid Hernandez</title>
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Bienenidos a mi pagina!
-        </h1>
-
-        <p className={styles.description}>
-          Astrid Hernandez
-          <code className={styles.code}>Pagina principal</code>
-        </p>
-        <Text size={'XXL'} color={'COLOR'} weight={'BOLD'}>Soy texto de pueba</Text>
-
-        <Button/>
+      <main>
+        <Text size={'XXXL'} color={'primary'} weight={'light'}>Astrid Hernandez</Text>
+        <Text size={'XXL'} color={'accent'} weight={'bold'}>Astrid Hernandez</Text>
+        <Text size={'XL'} color={'muted'} weight={'regular'}>Astrid Hernandez</Text>
       </main>
-
-      <footer className={styles.footer}>
-        <div>Astrid footer :)</div>
-      </footer>
     </div>
   )
 }
