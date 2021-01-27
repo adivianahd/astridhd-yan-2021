@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Text from "./Text";
+import Card from "./Card";
 
 const StyleGrid = styled.div`
   display: flex;
@@ -9,9 +11,13 @@ const StyleGrid = styled.div`
   margin: auto;
 `;
 
-function Grid(props) {
+function Grid() {
   return (
-    <StyleGrid {...props} />
+    <StyleGrid>
+      <Card>
+        <Text size={'XXXL'} color={'primary'} weight={'extrabold'}>Astrid Hernandez</Text>
+      </Card>
+    </StyleGrid>
   )
 }
 

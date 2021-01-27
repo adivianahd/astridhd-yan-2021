@@ -1,18 +1,18 @@
 import styled from "styled-components";
 import Bar from './Bar';
 
-const StyleHeader = styled.div`
+const StyleFooter = styled.div`
 ${({ theme }) => `background-color: ${theme.background.primary};`}
   margin-top: auto;
   width: 100%;
 `;
 
-function Header() {
+function Footer() {
   return (
-    <StyleHeader>
-      <Bar>hola soy el Header</Bar>
-    </StyleHeader>
+    <StyleFooter>
+      <Bar>hola soy el footer</Bar>
+    </StyleFooter>
   )
 }
 
-export default (Header);
+export default (Footer);
