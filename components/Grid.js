@@ -5,7 +5,7 @@ const StyleGrid = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
-  padding: 40px;
+  padding: 20px 0px 20px 0px;
   margin: auto;
 `;
 
